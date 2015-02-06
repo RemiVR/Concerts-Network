@@ -1,15 +1,32 @@
 // Place all the styles related to the concerts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-.container{
-	text-align: center;
-	width: 1200px;
-	background-color: blue;
-}
 body{
 	text-align: center;
 }
-.welcome {
-	color: blue;
+.container{
+	display: inline-block;
+	width: 1200px;
+}
+.sidebar{
+	float: left;
+	width: 400px;
+	height: 100%;
+	border: solid red 1px;
+}
+.links{
+	border: solid 1px grey;
+	padding: 1em;
+	list-style-type: none;
+}
+.links a{
+	font-family: 'Open Sans', sans-serif;
+	color: silver;
+	text-decoration: none;
+	font-size: 1.6em;
+}
+.today_event{
+	float: right;
+	width: 100%;
+	border: solid blue 1px;
 }

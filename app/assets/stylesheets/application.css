@@ -17,16 +17,20 @@
 	margin: 0;
 	padding: 0;
 }
+body{
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
  nav{
  	text-align: center;
 	border-bottom: 1px solid silver;
  }
 .navbar{
-	font-family: Helvetica, Tahoma, sans-serif; 
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1.2em;
  	color: black;
  	margin: 4px ;
- 	padding: 0.4em 1em;
+ 	padding: 0.5em 1.1em;
  	display: inline-block;
  	border: silver solid 1px;
  	border-radius: 20px;
