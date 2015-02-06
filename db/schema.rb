@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20150206085311) do
     t.string   "band"
     t.string   "venue"
     t.string   "city"
+    t.datetime "date"
     t.integer  "price"
     t.text     "description"
     t.datetime "created_at",  null: false
