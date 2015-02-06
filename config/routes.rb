@@ -5,6 +5,17 @@ get '/' => 'site#home'
 resources :concerts
 
 
+#      Prefix  Verb   URI Pattern                  Controller#Action
+#              GET    /                            site#home
+#     concerts GET    /concerts(.:format)          concerts#index
+#              POST   /concerts(.:format)          concerts#create
+#  new_concert GET    /concerts/new(.:format)      concerts#new
+# edit_concert GET    /concerts/:id/edit(.:format) concerts#edit
+#      concert GET    /concerts/:id(.:format)      concerts#show
+#              PATCH  /concerts/:id(.:format)      concerts#update
+#              PUT    /concerts/:id(.:format)      concerts#update
+#              DELETE /concerts/:id(.:format)      concerts#destroy
+
 
 
 

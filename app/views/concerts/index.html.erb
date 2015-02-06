@@ -1,1 +1,5 @@
-<h2>Concerts</h2>
+<ul>
+<% @concert.each do |concert|%>
+	<li><%= concert.name %></li>
+</ul>
+
