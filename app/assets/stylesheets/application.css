@@ -14,6 +14,7 @@
  *= require_self
  */
 *{
+	text-align: center;
 	margin: 0;
 	padding: 0;
 }
@@ -24,7 +25,10 @@ body{
  nav{
  	text-align: center;
 	border-bottom: 1px solid silver;
- }
+}
+.container{
+	margin: auto;
+}
 .navbar{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.2em;
