@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+*{
+	margin: 0;
+	padding: 0;
+}
+ nav{
+ 	text-align: center;
+	border-bottom: 1px solid silver;
+ }
+.navbar{
+	font-family: Helvetica, Tahoma, sans-serif; 
+	font-size: 1.2em;
+ 	color: black;
+ 	margin: 4px ;
+ 	padding: 0.4em 1em;
+ 	display: inline-block;
+ 	border: silver solid 1px;
+ 	border-radius: 20px;
+ }
+ .navbar:hover{
+ 	background-color: silver;
+ 	color: white;
+ }
+

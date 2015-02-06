@@ -1,10 +1,11 @@
 
 <ul>
-	<li><%= @concert.name%></li>
-	<li><%= @concert.band%></li>
-	<li><%= @concert.venue%></li>
-	<li><%= @concert.city%></li>
-	<li><%= @concert.date%></li>
-	<li><%= @concert.price%></li>
-	<li><%= @concert.description%></li>
+	<h2><li><%= @concert.name%></li></h2>
+	<h4><li><%= @concert.band%></li></h4>
+	<h4><li><%= @concert.venue%></li></h4>
+	<h4><li><%= @concert.city%></li></h4>
+	<h4><li><%= @concert.date%></li></h4>
+	<h4><li><%= @concert.price%></li></h4>
+	<h4><li><%= @concert.description%></li></h4>
 </ul>
+<h2><%= link_to("back", concerts_path)%></h2>

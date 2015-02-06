@@ -1,8 +1,10 @@
-<h2>Hello</h2>
+<h2 class="welcome">Hello</h2>
+<div class="container">
+<>
 <ul>
-<% @concert.each do |concert|%>
-	<li><%= link_to(concert.name, concert_path(concert.id))%>
-	<%end%>
-	</li>
-</ul>
-
+	<% @concert.each do |concert|%>
+		<li><%= link_to(concert.name, concert_path(concert.id))%>
+		<%end%>
+		</li>
+	</ul>
+</div>
