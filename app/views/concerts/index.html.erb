@@ -1,13 +1,9 @@
 
-	<ul>
-		<% Concert.all.each do |concert|%>
-			<li class="links"><%= link_to(concert.name, concert_path(concert.id))%>
-			<%end%>
-			</li>
-		</ul>
+				<h1 class="title">Today's Events</h1>
 			<ul>
 				<% @today_concert.each do |concert|%>
 				<li class="links"><%= link_to(concert.name, concert_path(concert.id))%>
+					<br>
 					<%= concert.description%>
 				</li>
 				<%= image_tag concert.logo.url(:large) %>

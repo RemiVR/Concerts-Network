@@ -20,24 +20,27 @@
 </header>
 <div class="container">
 	<div class="row">
-		<div class="col-sm-4">
-			
+		<div class="col-sm-4 sidebar">
+			<h2 class="title">Upcoming Events</h2>
+			<ul>
+				<% Concert.all.each do |concert|%>
+				<li class="links"><%= link_to(concert.name, concert_path(concert.id))%>
+				<%end%>
+			</li>
+		</ul>
 		</div>
-		<div class="sm-8">
-			
+		<div class="col-sm-8 today_event">
+				<%= yield %>
 		</div>
 	</div>
-	
-	<div class="sidebar">
-		<h2 class="title">Upcoming Events</h2>
-	
-	</div>
-	<div class="today_event">
-		<h1 class="title">Today's Events</h1>
-	</div>
-
 </div>
-<%= yield %>
+
+	<!-- <div class="sidebar">
+	
+	</div> -->
+	<!-- <div class="today_event">
+	</div> -->
+
 
 </body>
 </html>

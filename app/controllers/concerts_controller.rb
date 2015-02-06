@@ -17,6 +17,17 @@ class ConcertsController < ApplicationController
 			render 'new'
 		end
 	end
+	def edit
+		@concert = Concert.find(params[:id])
+	end
+	def update
+		@concert = Concert.find(params[:id])
+		if @concert.update_attributes concert_params
+			redirect_to action: 'show', controller: 'concerts'
+		else
+			render 'edit'
+		end
+	end
 	private
 	def concert_params
 		params.require(:concert).permit(:name, :band, :venue, :city, :date, :price, :description, :logo)

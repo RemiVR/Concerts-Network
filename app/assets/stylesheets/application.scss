@@ -17,6 +17,7 @@
 @import "bootstrap";
 
 *{
+	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
@@ -28,12 +29,9 @@ body{
  	text-align: center;
 	border-bottom: 1px solid silver;
 }
-.container{
-	margin: auto;
-}
 .navbar{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.2em;
+	font-size: 1.5em;
  	color: black;
  	margin: 4px ;
  	padding: 0.5em 1.1em;
@@ -46,17 +44,6 @@ body{
  	color: white;
  }
 
-.container{
-	margin: aut;
-	display: flex;
-	width: 1000px;
-}
-.sidebar{
-	display: inline-block;
-	width: 30%;
-	border-right: 1px solid silver;
-	box-shadow: -2px 2px 3px 0 silver;
-}
 .links{
 	padding: 0.8em;
 	list-style-type: none;
@@ -69,12 +56,6 @@ body{
 }
 .links a:hover{
 	text-shadow: 2px 2px 3px  skyblue;
-}
-.today_event{
-	display: inline-block;
-	width: 100%;
-	border-radius: 0 0 30px 0;
-	box-shadow: 2px 2px 3px 0 silver;
 }
 .title{
 	text-decoration: underline;

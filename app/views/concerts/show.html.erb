@@ -1,11 +1,13 @@
 
 <ul>
 	<h2><li><%= @concert.name%></li></h2>
+	<%= image_tag @concert.logo.url(:large) %>
 	<h4><li><%= @concert.band%></li></h4>
 	<h4><li><%= @concert.venue%></li></h4>
 	<h4><li><%= @concert.city%></li></h4>
 	<h4><li><%= @concert.date%></li></h4>
-	<h4><li><%= @concert.price%></li></h4>
+	<h4><li>$<%= @concert.price%></li></h4>
 	<h4><li><%= @concert.description%></li></h4>
 </ul>
 <h2><%= link_to("back", concerts_path)%></h2>
+<h2><%= link_to("edit", edit_concert_path)%></h2>
