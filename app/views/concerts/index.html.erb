@@ -1,7 +1,7 @@
 <h2>Hello</h2>
 <ul>
 <% @concert.each do |concert|%>
-	<li><%= link_to(concert.name, concerts_path)%>
+	<li><%= link_to(concert.name, concert_path(concert.id))%>
 	<%end%>
 	</li>
 </ul>
