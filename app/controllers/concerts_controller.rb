@@ -1,6 +1,5 @@
 class ConcertsController < ApplicationController
 	def index
-		@concert = Concert.all
 		@today_concert = Concert.where(date: Date.today.beginning_of_day..Date.today.end_of_day).order("created_at")
 		@upcoming_concerts = Concert.where("date > ?", Date.today).order("created_at")
 	end
@@ -20,6 +19,6 @@ class ConcertsController < ApplicationController
 	end
 	private
 	def concert_params
-		params.require(:concert).permit(:name, :band, :venue, :city, :date, :price, :description)
+		params.require(:concert).permit(:name, :band, :venue, :city, :date, :price, :description, :logo)
 	end
 end

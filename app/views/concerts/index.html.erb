@@ -1,27 +1,15 @@
-<div class="container">
-	<div class="sidebar">
-		<h2 class="title">Upcoming Events</h2>
+
 	<ul>
-		<% @concert.each do |concert|%>
+		<% Concert.all.each do |concert|%>
 			<li class="links"><%= link_to(concert.name, concert_path(concert.id))%>
 			<%end%>
 			</li>
 		</ul>
-	</div>
-	<div class="today_event">
-		<article>
-		<h1 class="title">Today's Events</h1>
 			<ul>
 				<% @today_concert.each do |concert|%>
 				<li class="links"><%= link_to(concert.name, concert_path(concert.id))%>
-				<%end%>
+					<%= concert.description%>
 				</li>
+				<%= image_tag concert.logo.url(:large) %>
+				<%end%>
 			</ul>
-		</article>
-	</div>
-
-
-
-
-
-</div>
