@@ -1,7 +1,7 @@
 class ConcertsController < ApplicationController
 	def index
 		@today_concert = Concert.where(date: Date.today.beginning_of_day..Date.today.end_of_day).order("created_at")
-		@upcoming_concerts = Concert.where("date > ?", Date.today).order("created_at")
+		@upcoming_concerts = Concert.where(date: Date.today.beginning_of_day..Date.today.end_of_day).order("created_at")
 	end
 	def show
 		@concert = Concert.find(params[:id])
