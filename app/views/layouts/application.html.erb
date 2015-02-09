@@ -12,7 +12,7 @@
 	<nav>
 		<ul>
 			<li class="navbar">Concerts</li>
-			<li class="navbar">Add new</li>
+			<li class="navbar"><%= link_to("Add new", new_concert_path)%></li>
 			<li class="navbar">About us</li>
 			<li class="navbar">Contact</li>
 		</ul>
@@ -20,7 +20,7 @@
 </header>
 <div class="container">
 	<div class="row">
-		<div class="col-sm-4 sidebar">
+		<div class="col-sm-3 sidebar">
 			<h2 class="title">Upcoming Events</h2>
 			<ul>
 				<% Concert.all.each do |concert|%>
@@ -29,18 +29,10 @@
 			</li>
 		</ul>
 		</div>
-		<div class="col-sm-8 today_event">
+		<div class="col-sm-9 today_event">
 				<%= yield %>
 		</div>
 	</div>
 </div>
-
-	<!-- <div class="sidebar">
-	
-	</div> -->
-	<!-- <div class="today_event">
-	</div> -->
-
-
 </body>
 </html>
